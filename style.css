@@ -1,145 +1,177 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Global*/
-body{
-    font-family: "Raleway";
-    background-color: #ebf2ff ;
-}
-.button__primary{
-    background-image:linear-gradient(to right , #ff512f 0% ,#dd2476 51% ,#ff512f 100%);
-    border: none;
-    color: #fff;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-}
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-}
-.navbar__brand{
-    width:90px;
-}
-.navbar__logo{
-    width:100%;
-}
-
-.hero__container{
-    width: 100%;
-}
-.hero__image__container{
-    width: 100%;
-    position: relative;
-    
-}
-.hero__image{
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-}
-.hero__image__shape{
-    position: absolute;
-    top: -25px;right: 0;
-}
-
-
-.hero__text{
-    
-    font-size: 30px;
-    color: #1d3557;
-    margin: 20px 0;
-    
-}
-.explore__menu__text{
-    font-size: 30px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.explore__menu__viewmore{
-    display: flex;
-    justify-content: center;
-}
-.food__menu__card{
-    width: 100%;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-.food__image{
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-.food__menu__card__description{
-    padding: 20px;
-}
-
-
-/*Media Queries*/
-@media (min-width:768px){
-    .container{
-        max-width: 755px;
-    }
-   .navbar{
-       justify-content: space-between;
-       padding: 0px 20px;
-   }
-   .navbar__brand{
-       width: 130px;
-   }
-   .button__primary{
-       padding:12px 20px;
-       font-size: 20px;
-
-   }
-   .hero__container{
-       display: flex;
-       flex-direction: row-reverse;
-       justify-content: space-between;
-       gap: 10px;
-       
-       
-   }
-   
-   .hero__description{
-       padding: 55px 0;
-   }
-   .hero__text{
-       font-size: 30px;
-   }
-   
-}
-@media (min-width:1020px){
-    .container{
-        max-width: 1020px;
-    }
-    .hero__text{
-        font-size: 40px;
-    }
-        .hero__description{
-            padding: 80px 0;
-        }
-        
-
-@media (min-width:1400px){
-    .container{
-        max-width: 1250px;
-    }
-    .hero__text{
-        font-size: 50px;
-    }
-}
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            /*Global*/
+            
+            body {
+                font-family: "Raleway";
+                background-color: #ebf2ff;
+            }
+            
+            .button__primary {
+                background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+                border: none;
+                color: #fff;
+                padding: 12px;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+            
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                padding: 15px;
+            }
+            
+            .navbar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #fff;
+            }
+            
+            .navbar__brand {
+                width: 90px;
+            }
+            
+            .navbar__logo {
+                width: 100%;
+            }
+            
+            .hero__container {
+                width: 100%;
+            }
+            
+            .hero__image__container {
+                width: 100%;
+                position: relative;
+            }
+            
+            .hero__image {
+                width: 100%;
+                position: absolute;
+                z-index: 2;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+            }
+            
+            .hero__image__shape {
+                position: absolute;
+                top: -25px;
+                right: 0;
+            }
+            
+            .hero__text {
+                font-size: 30px;
+                color: #1d3557;
+                margin: 20px 0;
+            }
+            
+            .explore__menu__text {
+                font-size: 40px;
+                margin-top: 60px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            .explore__menu__viewmore {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .food__menu__card {
+                width: 100%;
+                background-color: #fff;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            }
+            
+            .food__image {
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+            
+            .food__menu__card__description {
+                padding: 20px;
+            }
+            /*Media Queries*/
+            
+            @media (min-width:768px) {
+                .container {
+                    max-width: 755px;
+                }
+                .navbar {
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                }
+                .navbar__brand {
+                    width: 150px;
+                }
+                .button__primary {
+                    padding: 12px 20px;
+                    font-size: 20px;
+                }
+                .hero__container {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    gap: 10px;
+                }
+                .hero__description {
+                    padding: 55px 0;
+                }
+                .hero__text {
+                    font-size: 30px;
+                }
+                .explore__menu__lists {
+                    padding: 0 20px;
+                    margin-top: 50px;
+                    display: flex;
+                    gap: 12px;
+                }
+                .explore__menu__text {
+                    margin-top: 0px;
+                }
+                .explore__menu__container {
+                    position: relative;
+                }
+                .explore__menu__gradient__bg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+                    z-index: -3;
+                    transform: skewY(-5deg);
+                }
+                #pizza__card {
+                    margin-top: -25px;
+                    margin-bottom: 50px;
+                }
+            }
+            
+            @media (min-width:1020px) {
+                .container {
+                    max-width: 1020px;
+                }
+                .hero__text {
+                    font-size: 40px;
+                }
+                .hero__description {
+                    padding: 80px 0;
+                }
+                .explore__menu__text {
+                    font-size: 45px;
+                }
+                @media (min-width:1400px) {
+                    .container {
+                        max-width: 1250px;
+                    }
+                    .hero__text {
+                        font-size: 50px;
+                    }
+                }
